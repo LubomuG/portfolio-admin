@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="uk" data-theme="dark">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portfolio Admin</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@500;700&family=Manrope:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="admin.css">
+</head>
+<body>
+
+<section id="login">
+  <form id="lcard" class="glass">
+    <h1>Portfolio Admin</h1>
+    <p data-i18n="login.sub">Sign in to manage your portfolio.</p>
+    <label for="em" data-i18n="login.email">Email</label><input id="em" type="email" autocomplete="username" required>
+    <label for="pw" data-i18n="login.pw">Password</label><input id="pw" type="password" autocomplete="current-password" required>
+    <button class="btn pri" style="width:100%;margin-top:20px" data-i18n="login.btn">Sign in</button>
+  </form>
+</section>
+
+<div id="app">
+  <aside class="glass">
+    <h2>◈ Portfolio</h2>
+    <button class="nav" data-v="dash"><span data-i18n="nav.dash">Dashboard</span></button>
+    <button class="nav" data-v="projects"><span data-i18n="nav.projects">Projects</span></button>
+    <button class="nav" data-v="skills"><span data-i18n="nav.skills">Skills</span></button>
+    <button class="nav" data-v="messages"><span data-i18n="nav.messages">Messages</span> <span id="unread" class="tag" style="display:none"></span></button>
+    <button class="nav" data-v="email"><span data-i18n="nav.email">Email</span></button>
+    <div class="sp"></div>
+    <button class="nav pick" id="lg-b" type="button" aria-haspopup="listbox"><small class="pk-l" data-i18n="pk.lang">Language</small><span class="pk-v" id="lg-v"></span></button>
+    <button class="nav pick" id="th-b" type="button" aria-haspopup="listbox"><small class="pk-l" data-i18n="pk.theme">Theme</small><span class="pk-v" id="th-v"></span></button>
+    <button class="nav" id="lo" type="button"><span data-i18n="nav.out">Sign out</span></button>
+  </aside>
+  <main id="view"></main>
+</div>
+<div id="toast"></div>
+
+<script src="admin.js"></script>
+</body>
+</html>
