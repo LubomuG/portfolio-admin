@@ -4,8 +4,7 @@
   "description": "Portfolio admin panel: API, Swagger and static frontend",
   "main": "serveradmin.js",
   "scripts": {
-    "start": "node serveradmin.js",
-    "dev": "node --watch serveradmin.js"
+    "start": "serveradmin.js"
   },
   "engines": {
     "node": ">=18"
